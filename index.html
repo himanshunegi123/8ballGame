@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magic-8-balls</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&amp;display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: 'Roboto Mono', 'monospace', 'sans-serif';
+        }
+        .main {
+            height: 150vh;
+            top: 0px;
+            width: 100%;
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            text-align: center;
+        }
+
+        .main h1 {
+            top:0px;
+            color: white;
+            font-size: 50px;
+        }
+
+        #input {
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            border: 2px solid white;
+            width: 400px;
+            height: 50px;
+        }
+
+        #button {
+            border: 1px solid white;
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            width: 80px;
+            height: 40px;
+            color: white;
+            border-radius: 5px;
+            
+        }
+
+        #button:hover {
+            border: 1px solid blue;
+            cursor: pointer;
+        }
+        .img {
+            background-image: url('https://shashish-mishra.github.io/magic-8-balls/8ball.png');
+            width: 500px;
+            height: 500px;
+        }
+
+        #but2 {
+            width: 80px;
+            height: 40px;
+            border: 1px solid white;
+        
+        }
+
+        #name {
+            display: block;
+            color: white;
+            font-size: 50px;
+            top:100px;
+        }
+
+        #getFor {
+            width: 250px;
+            height: 80px;
+            border: 1px solid white;
+            box-shadow: 5px 5px 10px 10px white;
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            color:white;
+            float:right;
+            font-size: 20px;
+            margin-right:40%;
+            display:none;
+
+            
+        }
+        #getFor:hover {
+            border: 1px solid blue;
+            cursor: pointer;
+
+        }
+        #emer {
+            color:white;
+            font-size:20px;
+        }
+
+    </style>
+</head>
+
+<body class="main">
+    <div>
+        <h1>Enter Your Name</h1>
+        <input id="input">
+        <button id="button" onclick="FirstFunc1()" type="Enter">Enter</button>
+        <p id="emer"></p>
+        <p id="name"></p>
+        <button  id="getFor" onclick="window.location.href='fortune.html'" style="text-decoration: none;color: white;">Get Your Fortune</a></button>
+    </div>
+    <div class="img">
+    </div>
+    <script src="8ball.js">
+
+    </script>
+</body>
+
+</html>
