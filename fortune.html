@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&amp;display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: 'Roboto Mono', 'monospace', 'sans-serif';
+        }
+        .main {
+            height: 150vh;
+            margin: 0px;
+            width: 100%;
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            text-align: center;
+        }
+
+        .main h1 {
+            color: white;
+            font-size: 30px;
+        }
+
+        #input {
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            border: 2px solid white;
+            width: 400px;
+            height: 50px;
+        }
+
+        #button1 {
+            border: 1px solid white;
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            width: 80px;
+            height: 40px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #button1:hover {
+            border: 1px solid blue;
+            cursor: pointer;
+
+        }
+
+        #button2 {
+            border: 1px solid white;
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            width: 80px;
+            height: 40px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #button2:hover {
+            border: 1px solid blue;
+            cursor: pointer;
+
+        }
+
+        #button3 {
+            border: 1px solid white;
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            width: 80px;
+            height: 40px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #button3:hover {
+            border: 1px solid blue;
+            cursor: pointer;
+
+        }
+
+        #img {
+            background-image: url('https://shashish-mishra.github.io/magic-8-balls/8ball.png');
+            width: 500px;
+            height: 500px;
+        }
+
+        #but2 {
+            width: 80px;
+            height: 40px;
+            border: 1px solid white;
+
+        }
+
+        #name2 {
+            display: block;
+            color: white;
+            font-size: 50px;
+            top: 100px;
+        }
+
+        #getFor {
+            width: 250px;
+            height: 80px;
+            border: 1px solid white;
+            box-shadow: 5px 5px 5px 5px white;
+            background-image: linear-gradient(to right, #85CCE7, #2F8C59);
+            color: white;
+            font-size: 20px;
+
+        }
+
+        #getFor:hover {
+            border: 1px solid blue;
+            cursor: pointer;
+
+        }
+
+        #emer2 {
+            color: white;
+            font-size: 20px;
+        }
+
+        #col {
+            float: right;
+            text-align: left;
+            margin-right: 150px;
+        }
+
+        #col ul {
+            font-size: 20px;
+            color: white;
+        }
+
+        #col li {
+            cursor: pointer;
+
+        }
+
+        .shake{
+            animation:shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        #h1 {
+            top:0px;
+            color: white;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body class="main" onload="FuncH1()">
+    <div>
+        <p id="h1"></p>
+        <input id="input">
+        <button id="button1" onclick="FirstFunc2()" type="Enter"><a>Enter</a></button>
+        <button id="button2" type="Enter" onclick="window.location.href='fortune.html'" style="text-decoration: none;color: white;">Try
+                Again</a></button>
+        <button id="button3" type="Enter"onclick="window.location.href='8ball.html'"
+                style="text-decoration: none;color: white;">Quit</a></button>
+        <p id="emer2"></p>
+        <p id="name2"></p>
+        <div id="col">
+            <h1>Click on questions to get prediction..</h1>
+            <ul>
+                <li onclick="FirstFunc ()">Will I win the lottery in 2021?</li>
+                <li onclick="FirstFunc ()">Will Donald Trump be our next President?</li>
+                <li onclick="FirstFunc ()">Will we get more snow this year than last year?</li>
+                <li onclick="FirstFunc ()">Should I order pizza tonight?</li>
+                <li onclick="FirstFunc ()">Well, should I cook dinner instead?</li>
+                <li onclick="FirstFunc ()">Should we do this again?</li>
+                <li onclick="FirstFunc ()">Should I skip my surgery and go on vacations?</li>
+                <li onclick="FirstFunc ()">Will I buy a car in 2021?</li>
+                <li onclick="FirstFunc ()">Will I be millionare in 2021?</li>
+            </ul>
+        </div>
+        <div id="img">
+
+        </div>
+    </div>
+
+    </div>
+    <script src="8ball.js">
+
+    </script>
+</body>
+
+</html>
